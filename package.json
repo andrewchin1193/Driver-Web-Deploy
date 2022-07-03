@@ -1,8 +1,11 @@
 {
+  "homapage": "http://andrewchin1193.github.io/Driver-Web-Deploy",
   "name": "driver",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "predeploy": "expo build:web",
+    "deploy": "gh-pages -d web-build",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -18,7 +21,8 @@
     "react-native-web": "^0.18.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "gh-pages": "^4.0.0"
   },
   "private": true
 }
